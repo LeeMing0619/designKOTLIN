@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/addItemRootView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/default_padding"
+                tools:context="com.lee.desingkotlin.activity.AddItemActivity">
+
+    <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/thumbnail_height"
+            android:scaleType="fitCenter" />
+
+    <TextView
+            android:id="@+id/categoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/category_title_padding"
+            android:text="@string/category_title"
+            android:textColor="@color/colorAccent" />
+
+    <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton"
+            android:layout_toRightOf="@+id/categoryTitle" />
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/titleTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/categoryTitle"
+            app:counterEnabled="true"
+            app:counterMaxLength="30">
+
+        <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/hint_title"
+                android:maxLines="2" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/priceTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTextInput"
+            app:counterEnabled="true"
+            app:counterMaxLength="30">
+
+        <EditText
+                android:id="@+id/priceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/hint_price"
+                android:inputType="numberDecimal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+            android:id="@+id/detailsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priceTextInput"
+            android:hint="@string/hint_details"
+            android:lines="2" />
+
+    <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailsEditText"
+            android:onClick="onClickAddItem"
+            android:text="@string/hint_add_item" />
+</RelativeLayout>

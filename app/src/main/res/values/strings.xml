@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">desing(KOTLIN)</string>
+    <string name="currency_symbol">\$</string>
+    <string name="category_title">Category:</string>
+    <string name="add_item_successful">You have successfully added an item!</string>
+    <string name="ok">OK</string>
+
+    <string name="laptops">Laptops</string>
+    <string name="monitors">Monitors</string>
+    <string name="headphones">Headphones</string>
+
+    <string name="bundle_extra_item">ITEM</string>
+    <string name="transition_image">transition_image</string>
+    <string name="transition_title">transition_title</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_details">Details</string>
+    <string name="hint_add_item">Add Item</string>
+</resources>

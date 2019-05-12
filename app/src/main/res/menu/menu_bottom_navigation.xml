@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/nav_laptops"
+            android:icon="@drawable/ic_laptop"
+            android:title="@string/laptops"/>
+    <item
+            android:id="@+id/nav_monitors"
+            android:icon="@drawable/ic_monitor"
+            android:title="@string/monitors"/>
+    <item
+            android:id="@+id/nav_headphones"
+            android:icon="@drawable/ic_headphone"
+            android:title="@string/headphones"/>
+</menu>
